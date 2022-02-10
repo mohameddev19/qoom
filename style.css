@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+:root{
+    --color1: #183661;
+    --color2: #1C4B82;
+    --color3: #DD6B4D;
+    --color4: #DAE1E7;
+    --bg: #eeeef5;
+    --bg2: rgb(173, 173, 185);
+    --color: #ffffff;
+    --footer: rgb(224, 224, 224);
+    --shadow: rgba(0, 0, 0, 0.1);
+    --big-shadow: rgba(131, 131, 131, 0.1);
+    --font: "Poppins";
+}
+::-webkit-scrollbar{
+    width: 5px;
+    height: 6px;
+    transition-duration: 0.4s;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--color3);
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+body{
+    color: var(--color) !important;
+    background-color: var(--bg) !important;
+    font-family: var(--font);
+}
+.row{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+a{
+    text-decoration: none !important;
+    color: #666 !important;
+    font-size:medium;
+    font-weight: medium;
+}
+button{
+    outline: none;
+    border: none;
+    border-radius: 0;
+}
+::after, ::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.hidde{
+    display: none;
+}
+
+.nav{
+    margin-top: .5rem !important;
+    margin-bottom: .5rem !important;
+}
+.nav div{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.nav div div{
+    height: 1.5rem;
+}
+
+.nav h1{
+    color: var(--color2);
+}
+
+.nav .links div a{
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: .5rem;
+    margin-left: .5rem;
+}
+
+.nav .button{
+    justify-content: flex-end;
+}
+
+.nav .button button{
+    background-color: var(--bg);
+    border: solid 2px var(--color3);
+    color: var(--color3);
+    height: 3rem;
+    width: 6rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+
+.top_bar{
+    background-color: var(--color2);
+    height: 30rem;
+    margin-bottom: 2rem;
+}
+
+.top_bar h1,.top_bar p{
+    color: var(--color4);
+}
+
+.top_bar > div{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.top_bar .Log_div{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    background-color: var(--color);
+    height: 3rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 4px 1px var(--shadow);
+    overflow: hidden;
+}
+
+.top_bar .Log_div input{
+    border: none;
+    outline: none;
+    width: 15%;
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius:  0 !important;
+}
+
+.top_bar .Log_div #email,.top_bar .Log_div #pass{
+    width: 80%;
+    height: 100%;
+    background-color: var(--color);
+    margin-right: 2%;
+    padding-left: 5px;
+}
+
+.top_bar .Log_div .button{
+    width: 15%;
+    height: 80%;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius:  5px !important;
+    background-color: var(--color1);
+    color: var(--color);
+    font-weight: bold;
+    box-shadow: 0 3px 4px 1px var(--shadow);
+}
+
+.top_bar .img{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100%;
+    filter: hue-rotate(5);
+}
+
+
+.qoom_number{
+    color: var(--color1);
+    min-height: 10rem;
+    margin-bottom: 4rem;
+}
+
+.qoom_number div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.qoom_number > div{
+    height: 10rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.qoom_number .icon{
+    height: 5rem;
+    width: 5rem !important;
+    border-radius: 50%;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+    background-color: var(--color3);
+    box-shadow: 0 2px 3px .5px var(--shadow);
+}
+
+.qoom_number p{
+    color: var(--color2);
+}
+
+
+.qoom_room{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center !important;
+    margin-bottom: 8rem;
+}
+
+.qoom_room .title{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center !important;
+    color: var(--color1);
+    height: 5rem;
+}
+
+.qoom_room a{
+    text-decoration: underline !important;
+    font-weight: bold;
+    color: var(--color3) !important;
+}
+
+
+.qoom_review{
+    background-color: var(--color4);
+    color: var(--color1);
+    text-align: center;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.qoom_review .review{
+    position: relative;
+    border: solid 2px var(--color3);
+    border-radius: 3px;
+    background-color: #ffffff;
+    padding: .5rem;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    box-shadow: 0 3px 4px 1px rgba(221, 106, 77, 0.4);
+    margin-top: 1.5rem;
+    margin-bottom: 1.4rem;
+}
+.qoom_review .review::after{
+    position: absolute;
+    bottom: -1.1rem;
+    left: calc(50% - 1rem);
+    content: '';
+    width: 2rem;
+    height: 2rem;
+    border-right: solid 2px var(--color3);
+    border-bottom: solid 2px var(--color3);
+    transform: rotate3d(0,0,1,45deg);
+    background-color: #ffffff;
+}
+
+.qoom_review .review img{
+    height: 3rem;
+    width: 3rem;
+    fill: var(--color1) !important;
+    margin-bottom: .5rem;
+}
+
+.qoom_review .review a{
+    position: relative;
+    color: var(--color3) !important;
+    z-index: 11;
+}
+
+.qoom_review .users img{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 1rem;
+}
+.qoom_review .users img:nth-child(2){
+    height: 3rem;
+    width: 3rem;
+    border-radius: 1.5rem;
+}
+
+
+.qoom_org{
+    color: var(--color1);
+    margin-bottom: 4rem;
+}
+
+.qoom_org h3{
+    text-align: center;
+}
+
+.qoom_org .parm{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cards img{
+    height: 48px;
+}
+
+.cards > div{
+    padding: .6rem;
+    width: 15rem !important;
+    height: 16rem;
+    background-color: var(--color4);
+    text-align: center;
+    padding-top: 4rem;
+    margin: .5rem;
+}
+
+.cards > div:nth-child(1){
+    position: relative;
+    background-color: var(--color2);
+    color: #ffffff;
+}
+
+.cards > div div:nth-child(1){
+    margin-bottom: 2rem;
+}
+
+.qoom_partners{
+    color: var(--color3);
+    margin-bottom: 2rem;
+}
+
+.logo_cards > div{
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.logo_cards .icon{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo_cards .icon h4{
+    margin-left: 1rem;
+}
+
+.qoom_team{
+    color: var(--color1);
+    margin-bottom: 4rem;
+}
+
+.qoom_team .title{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.qoom_team .line{
+    position: relative;
+    left: -5rem;
+    background-color: var(--color3);
+    width: 4rem;
+    height: 2px;
+}
+
+.qoom_team div{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.qoom_team img{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+
+.qoom_media{
+    background-color: var(--color1);
+    height: 10rem;
+}
+
+.qoom_media div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.qoom_media div h4{
+    width: 100%;
+}
+
+
+.qoom_media i{
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.qoom_media i:hover{
+    color: var(--color3) !important;
+}
